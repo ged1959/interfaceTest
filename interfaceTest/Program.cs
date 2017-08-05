@@ -15,10 +15,10 @@ namespace interfaceTest
             IPlug monitorA = new Monitor();
             IPlug keybordA = new Keybord();
 
-            //void Connected(IPlug device)
-            //{
-            //    Console.WriteLine($"{device}が接続されました！");
-            //}
+            void Connected(IPlug device)
+            {
+                Console.WriteLine($"{device}が接続されました！");
+            }
 
             Connected(monitorA);
             Connected(keybordA);
@@ -26,10 +26,10 @@ namespace interfaceTest
             Console.ReadLine();
         }
 
-        static void Connected(IPlug device)
-        {
-            Console.WriteLine($"{device}が接続されました！");
-        }
+        //static void Connected(IPlug device)
+        //{
+        //    Console.WriteLine($"{device}が接続されました！");
+        //}
 
         // 問題点。出力にnamespaceが入る。なので、classにpropertyを設定すべきかも。
 
