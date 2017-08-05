@@ -15,6 +15,7 @@ namespace interfaceTest
             IPlug monitorA = new Monitor();
             IPlug keybordA = new Keybord();
 
+            //こちらはstaticが不要。
             void Connected(IPlug device)
             {
                 Console.WriteLine($"{device}が接続されました！");
